@@ -1,0 +1,74 @@
+#offer {
+    width: $page-width;
+    padding-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    cursor: context-menu;
+
+    h1 {
+        position: absolute;
+        width: 50%;
+        padding-bottom: 10px;
+        top: 0;
+        left: 0;
+        font-family: $heading-font;
+        letter-spacing: 3px;
+        border-bottom: 5px double $color-hover;
+
+        span {
+            color: $color-primary;
+        }
+    }
+
+    .offer {
+        width: 29%;
+        height: 400px;
+        margin: $main-spacing/2 auto $main-spacing auto;
+        padding: $main-spacing/2;
+        border: 1px solid white;
+        transition: .8s linear;
+
+        opacity: 0.5;
+
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+        .offer-heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            h4 {
+                width: 60%;
+                font-size: 20px;
+                font-family: $heading-font;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+
+            img {
+                width: 40%;
+            }
+        }
+
+        .offer-description {
+            padding: 5px;
+            font-family: $text-font;
+            text-align: justify;
+            line-height: 150%;
+        }
+
+        &:hover {
+            border: 1px solid black;
+            opacity: 1;
+        }
+
+    }
+
+
+
+
+}

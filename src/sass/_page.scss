@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-image: url('../../public/img/bg.png');
+    /* Background pattern from Toptal Subtle Patterns */
+
+}
+
+.wrapper {
+    width: $page-width;
+    margin: 0 auto;
+    font-family: $text-font;
+
+    .sections {
+        background-color: white;
+    }
+
+}

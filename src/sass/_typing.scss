@@ -1,0 +1,27 @@
+.professions {
+
+    h4 {
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    h4:nth-last-of-type(1):after {
+        content: "_";
+        animation: cursor .3s infinite alternate;
+    }
+}
+
+
+
+@keyframes cursor {
+
+    0%,
+    30% {
+        opacity: 0;
+    }
+
+    70%,
+    100% {
+        opacity: 1;
+    }
+}
