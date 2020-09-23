@@ -1,0 +1,52 @@
+#about {
+    width: $page-width;
+    margin: $main-spacing*2 auto;
+
+    display: flex;
+
+
+    .about-img {
+        max-width: 30%;
+        position: relative;
+        z-index: 1;
+
+
+        &::before {
+            background: #969696;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            -webkit-transform: rotate(-6deg);
+            -moz-transform: rotate(-6deg);
+            -ms-transform: rotate(-6deg);
+            -o-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+            -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+            -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .25);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            // border: 1px solid black;
+
+            -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+
+
+        }
+    }
+
+    .about {
+        width: 50%;
+        padding: $main-spacing*2;
+    }
+}
