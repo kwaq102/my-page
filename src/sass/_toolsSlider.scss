@@ -1,0 +1,43 @@
+#tools {
+    width: $page-width;
+    margin: 0 auto;
+
+    h1 {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(0, 0, 0, .2);
+        font-family: $heading-font;
+        letter-spacing: 10px;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 25px;
+            height: 1px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        &::before {
+            left: 0;
+        }
+
+        &::after {
+            right: 0;
+        }
+    }
+
+    .tools-slider.my-slider {
+
+        img {
+
+            padding: $main-spacing;
+        }
+    }
+}
