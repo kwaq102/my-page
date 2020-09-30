@@ -4,6 +4,7 @@
   "description": "Uslugi tworzenia stron internetowych",
   "main": "index.js",
   "dependencies": {
+    "gallery": "^1.0.2",
     "particles.js": "^2.0.0",
     "tiny-slider": "^2.9.3"
   },

@@ -97,6 +97,18 @@ eval("/* -----------------------------------------------\n/* How to use? : Check
 
 /***/ }),
 
+/***/ "./node_modules/gallery/lib/gallery.min.js":
+/*!*************************************************!*\
+  !*** ./node_modules/gallery/lib/gallery.min.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof='function'==typeof Symbol&&'symbol'==typeof Symbol.iterator?function(a){return typeof a}:function(a){return a&&'function'==typeof Symbol&&a.constructor===Symbol&&a!==Symbol.prototype?'symbol':typeof a};(function(){var a,b='gallery-lightbox',c=document.createElement('div');c.className=b;var d=document.createElement('button');d.className='close',c.appendChild(d);var e=document.createElement('button');e.className='prev',c.appendChild(e);var f=document.createElement('button');f.className='next',c.appendChild(f);var g=document.createElement('div');g.className='image',c.appendChild(g);var h=document.createElement('img');g.appendChild(h);var i=document.createElement('div');i.className='description',c.appendChild(i);var j=document.createElement('style');j.innerHTML='.'+b+' {position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.9);opacity: 0;visibility: hidden;transition: opacity .3s ease, visibility .3s ease;display: flex;flex-direction: column;align-items: center;justify-content: center;font-size: 16px;font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif;padding: 1em;z-index: 9999;text-align: center;}.'+b+'.-open {opacity: 1;visibility: visible;}.'+b+' > .description {margin-top: 1em;color: white;-webkit-font-smoothing: antialiased;}.'+b+' > .image,.'+b+' > .image > img {max-width: 100%;max-height: 100%;}.'+b+' > .image {max-width: calc(100% - 6em);overflow: hidden;}.'+b+' > .next,.'+b+' > .prev,.'+b+' > .close {position: absolute;width: 3em;height: 3em;padding: 0;margin: 0;background: rgba(0, 0, 0, 0.2);border: 0;}.'+b+' > .close {top: 2em;right: 2em;}.'+b+' > .close:before,.'+b+' > .close:after,.'+b+' > .prev:before,.'+b+' > .next:before,.'+b+' > .prev:after,.'+b+' > .next:after {content: \\'\\';width: 80%;height: 2px;position: absolute;top: 50%;left: 10%;background: white;transform-origin: center;}.'+b+' > .close:before {transform: translateY(-1px) rotate(45deg);}.'+b+' > .close:after {transform: translateY(-1px) rotate(-45deg);}.'+b+' > .next,.'+b+' > .prev {top: 50%;transform: translateY(-1em)}.'+b+' > .next {right: 2em;}.'+b+' > .prev {left: 2em;}.'+b+' > .prev:before,.'+b+' > .next:before,.'+b+' > .prev:after,.'+b+' > .next:after {width: 20%;left: 40%;}.'+b+' > .next:before,.'+b+' > .next:after {transform-origin: right;}.'+b+' > .prev:before,.'+b+' > .prev:after {transform-origin: left;}.'+b+' > .next:after,.'+b+' > .prev:after {transform: rotate(45deg);}.'+b+' > .next:before,.'+b+' > .prev:before {transform: rotate(-45deg);}',document.body.appendChild(c),document.body.appendChild(j);var k=function(a){c.className=b+' -open',h.src=a.getAttribute('data-gallery-src'),i.innerHTML=a.getAttribute('data-gallery-desc')||''},l=function(){c.className=b,a=null},m=function(b){for(var c={currentIndex:0,next:function next(){c.currentIndex=(c.currentIndex+1)%b.length,k(b[c.currentIndex])},prev:function prev(){--c.currentIndex,0>c.currentIndex&&(c.currentIndex=b.length-1),k(b[c.currentIndex])}},d=function(d){return function(){a=c,c.currentIndex=d,k(b[d])}},e=0;e<b.length;e++)b[e].addEventListener('click',d(e))};window.addEventListener('keyup',function(b){27===b.keyCode&&l(),a&&(37===b.keyCode&&a.prev(),39===b.keyCode&&a.next())}),d.addEventListener('click',l),e.addEventListener('click',function(){return a&&a.prev()}),f.addEventListener('click',function(){return a&&a.next()});var n=function(a){for(var b,c=a.querySelectorAll('[data-gallery-src]'),d={},e=0;e<c.length;e++)b=c[e].getAttribute('data-gallery-id')||'_',d[b]=(d[b]||[]).concat(c[e]);Object.keys(d).forEach(function(a){return m(d[a])})};(function(a,b){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (b),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?\n\t\t\t\t(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):undefined})('undefined'==typeof self?this:self,function(){return n}),n(document)})();\n\n\n//# sourceURL=webpack:///./node_modules/gallery/lib/gallery.min.js?");
+
+/***/ }),
+
 /***/ "./node_modules/tiny-slider/src/helpers/addCSSRule.js":
 /*!************************************************************!*\
   !*** ./node_modules/tiny-slider/src/helpers/addCSSRule.js ***!
@@ -612,6 +624,18 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
+/***/ "./src/js/certificatesGallery.js":
+/*!***************************************!*\
+  !*** ./src/js/certificatesGallery.js ***!
+  \***************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_gallery_lib_gallery_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/gallery/lib/gallery.min.js */ \"./node_modules/gallery/lib/gallery.min.js\");\n/* harmony import */ var _node_modules_gallery_lib_gallery_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_gallery_lib_gallery_min_js__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/certificatesGallery.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -620,7 +644,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_canvas_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../js/canvas.js */ \"./js/canvas.js\");\n/* harmony import */ var _js_canvas_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_canvas_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _css_canvas_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/canvas.css */ \"./src/css/canvas.css\");\n/* harmony import */ var _css_canvas_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_canvas_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_typing_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/typing.js */ \"./src/js/typing.js\");\n/* harmony import */ var _js_typing_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_typing_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/slider.js */ \"./src/js/slider.js\");\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_index_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_canvas_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../js/canvas.js */ \"./js/canvas.js\");\n/* harmony import */ var _js_canvas_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_canvas_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _css_canvas_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/canvas.css */ \"./src/css/canvas.css\");\n/* harmony import */ var _css_canvas_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_canvas_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_typing_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../js/typing.js */ \"./src/js/typing.js\");\n/* harmony import */ var _js_typing_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_typing_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_slider_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../js/slider.js */ \"./src/js/slider.js\");\n/* harmony import */ var _js_certificatesGallery_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../js/certificatesGallery.js */ \"./src/js/certificatesGallery.js\");\n/* harmony import */ var _js_whyWorth_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../js/whyWorth.js */ \"./src/js/whyWorth.js\");\n/* harmony import */ var _js_whyWorth_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_js_whyWorth_js__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 
@@ -632,7 +656,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sas
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/tiny-slider/src/tiny-slider */ \"./node_modules/tiny-slider/src/tiny-slider.js\");\n// import { tns } from \"./node_modules/tiny-slider/src/tiny-slider\";\n\nvar slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__[\"tns\"])({\n  container: '.my-slider',\n  items: 3,\n  slideBy: 2,\n  speed: 2000,\n  autoplay: true,\n  autoplayTimeout: 3000,\n  mouseDrag: true,\n  autoWidth: true,\n  controls: false,\n  nav: false,\n  autoplayButtonOutput: false,\n  lazyload: true,\n  autoHeight: true // nav: false //kropki do przesuwania\n  // autoWidth: true,\n  // items: 3.3,\n  // slideBy: 2.6,\n  // gutter: 10,\n  // lazyload: true,\n  // container: \"#autoWidth-lazyload\",\n  // swipeAngle: false,\n  // speed: 400\n\n});\n\n//# sourceURL=webpack:///./src/js/slider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/tiny-slider/src/tiny-slider */ \"./node_modules/tiny-slider/src/tiny-slider.js\");\n\nvar slider = Object(_node_modules_tiny_slider_src_tiny_slider__WEBPACK_IMPORTED_MODULE_0__[\"tns\"])({\n  container: '.my-slider',\n  items: 3,\n  slideBy: 2,\n  speed: 2000,\n  autoplay: true,\n  autoplayTimeout: 3000,\n  mouseDrag: true,\n  autoWidth: true,\n  controls: false,\n  nav: false,\n  autoplayButtonOutput: false,\n  lazyload: true,\n  autoHeight: true\n});\n\n//# sourceURL=webpack:///./src/js/slider.js?");
 
 /***/ }),
 
@@ -644,6 +668,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, exports) {
 
 eval("var box = document.querySelector('.professions');\nvar professions = [\"Strony internetowe\", \"Marketing w internecie\", \"Copywriting\", \"Social media\"];\nvar wordIndex = 0;\nvar professionsIndex = 0;\nvar oldTime = 0;\nvar speed = 50;\nvar stop = 2000;\nvar activeDOMElement = box;\n\nvar typing = function typing(newTime) {\n  if (newTime - oldTime > speed) {\n    var letter = professions[professionsIndex].substr(wordIndex, 1);\n\n    if (wordIndex === professions[professionsIndex].length) {\n      if (professionsIndex === professions.length - 1) {\n        return setTimeout(function () {\n          box.textContent = \"\";\n          professionsIndex = 0;\n          wordIndex = 0;\n          requestAnimationFrame(typing);\n        }, stop);\n      }\n\n      return setTimeout(function () {\n        box.textContent = \"\";\n        professionsIndex++;\n        wordIndex = 0;\n        requestAnimationFrame(typing);\n      }, stop);\n    } else if (wordIndex === 0) {\n      var h4 = document.createElement('h4');\n      box.appendChild(h4);\n      activeDOMElement = h4;\n    }\n\n    activeDOMElement.textContent += letter;\n    oldTime = newTime;\n    wordIndex++;\n  }\n\n  requestAnimationFrame(typing);\n};\n\ntyping();\n\n//# sourceURL=webpack:///./src/js/typing.js?");
+
+/***/ }),
+
+/***/ "./src/js/whyWorth.js":
+/*!****************************!*\
+  !*** ./src/js/whyWorth.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var btnReadMore = document.querySelector('.read-more');\nvar txt = document.querySelector('.why-worth-text');\n\nvar showText = function showText() {\n  txt.classList.toggle('show');\n  txt.classList.contains('show') ? btnReadMore.textContent = \"Zamknij\" : btnReadMore.textContent = \"Czytaj więcej\";\n};\n\nbtnReadMore.addEventListener('click', showText);\n\n//# sourceURL=webpack:///./src/js/whyWorth.js?");
 
 /***/ }),
 

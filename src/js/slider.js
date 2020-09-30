@@ -1,9 +1,6 @@
-// import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 import {
     tns
 } from "../../node_modules/tiny-slider/src/tiny-slider";
-
-
 
 const slider = tns({
     container: '.my-slider',
@@ -19,16 +16,4 @@ const slider = tns({
     autoplayButtonOutput: false,
     lazyload: true,
     autoHeight: true
-
-    // nav: false //kropki do przesuwania
-
-    // autoWidth: true,
-    // items: 3.3,
-    // slideBy: 2.6,
-    // gutter: 10,
-
-    // lazyload: true,
-    // container: "#autoWidth-lazyload",
-    // swipeAngle: false,
-    // speed: 400
 });

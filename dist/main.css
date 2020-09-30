@@ -1,16 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-image: url(img/bg.png);
-  /* Background pattern from Toptal Subtle Patterns */ }
+  box-sizing: border-box; }
 
 .wrapper {
   width: 100%;
   margin: 0 auto;
   font-family: "Quicksand", sans-serif; }
   .wrapper .sections {
-    background-color: white; }
+    background-color: #fff; }
 
 #home {
   position: absolute;
@@ -158,7 +156,8 @@ body {
     left: 0;
     font-family: "Roboto", sans-serif;
     letter-spacing: 3px;
-    border-bottom: 5px double #012840; }
+    border-bottom: 5px double #012840;
+    font-size: 26px; }
     #offer h1 span {
       color: #0583F2; }
   #offer .offer {
@@ -266,7 +265,7 @@ body {
   width: 1200px;
   margin: 0 auto; }
   #tools h1 {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
     font-size: 14px;
     text-transform: uppercase;
@@ -284,11 +283,135 @@ body {
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.2); }
     #tools h1::before {
-      left: 0; }
+      left: -10px; }
     #tools h1::after {
       right: 0; }
   #tools .tools-slider.my-slider img {
     padding: 20px; }
+
+#certificates {
+  margin-top: 50px;
+  background-image: url(img/mountains.jpg);
+  background-attachment: fixed; }
+  #certificates div {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff; }
+    #certificates div h1 {
+      width: 20%;
+      margin: 0 auto;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.2);
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 10px;
+      position: relative; }
+      #certificates div h1::before, #certificates div h1::after {
+        content: "";
+        width: 25px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.2); }
+      #certificates div h1::before {
+        left: -10px; }
+      #certificates div h1::after {
+        right: 0; }
+  #certificates div.certificates-gallery {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: transparent; }
+    #certificates div.certificates-gallery img {
+      width: 20%;
+      margin: 20px;
+      cursor: pointer; }
+
+#why-worth {
+  padding: 100px 20% 30px 20%;
+  background-image: url(img/bg.png); }
+  #why-worth .images {
+    position: relative; }
+    #why-worth .images img {
+      position: absolute; }
+    #why-worth .images img.thinking {
+      top: 20px;
+      left: 0; }
+    #why-worth .images img.cloud {
+      width: 260px;
+      top: -50px;
+      left: 20%; }
+  #why-worth .why-worth-desc {
+    width: 50%;
+    margin-left: 50%; }
+    #why-worth .why-worth-desc h1 {
+      width: 50%;
+      margin: 0 0 20px 0;
+      padding: 10px;
+      font-family: "Roboto", sans-serif;
+      font-size: 26px;
+      letter-spacing: 3px;
+      border-bottom: 5px double #012840; }
+      #why-worth .why-worth-desc h1 span {
+        color: #0583F2; }
+    #why-worth .why-worth-desc div h6 {
+      margin: 20px 0;
+      font-size: 22px;
+      font-family: "Roboto", sans-serif; }
+      #why-worth .why-worth-desc div h6 span {
+        margin-right: 10px; }
+        #why-worth .why-worth-desc div h6 span img {
+          display: inline-block;
+          width: 20px; }
+    #why-worth .why-worth-desc .read-more {
+      width: 190px;
+      position: relative;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      background-color: transparent;
+      letter-spacing: 3px;
+      border: 3px solid #0583F2;
+      text-transform: uppercase;
+      color: #0583F2;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: color 300ms;
+      z-index: 1;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      outline: none; }
+      #why-worth .why-worth-desc .read-more:hover {
+        color: white; }
+      #why-worth .why-worth-desc .read-more::before {
+        content: '';
+        background-color: #0583F2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scaleX(0);
+        transition: transform 600ms;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); }
+      #why-worth .why-worth-desc .read-more:hover::before {
+        transform: scaleX(1); }
+  #why-worth p.why-worth-text {
+    height: 0;
+    overflow: hidden;
+    transition: .2s linear; }
+  #why-worth p.why-worth-text.show {
+    height: 170px; }
 
 footer {
   width: 100%;
