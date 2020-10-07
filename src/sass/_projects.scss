@@ -1,0 +1,62 @@
+#projects {
+    width: 100%;
+    height: 300px;
+    padding: $main-spacing;
+    box-sizing: border-box;
+
+    background: #000;
+
+    .loading-projects {
+        width: $page-width;
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            width: 25%;
+            padding-bottom: 10px;
+            text-align: left;
+            font-family: $heading-font;
+            letter-spacing: 3px;
+            border-bottom: 5px double $color-hover;
+            font-size: 26px;
+            color: white;
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        .loading {
+            position: relative;
+            display: inline-block;
+            margin-top: 5%;
+            font-size: $size-h1;
+            font-weight: bold;
+            font-family: $heading-font;
+            letter-spacing: 3px;
+            color: white;
+
+
+            &::after {
+                content: attr(data-text);
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                color: $color-primary;
+                width: 0%;
+                animation: loading 6s linear infinite;
+            }
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%
+    }
+}

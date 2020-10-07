@@ -15,5 +15,5 @@ const slider = tns({
     nav: false,
     autoplayButtonOutput: false,
     lazyload: true,
-    autoHeight: true
+    // autoHeight: true
 });

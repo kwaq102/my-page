@@ -1,5 +1,4 @@
 #certificates {
-    margin-top: 50px;
     background-image: url("/public/img/mountains.jpg");
     background-attachment: fixed;
 
@@ -42,7 +41,7 @@
     }
 
     div.certificates-gallery {
-        width: $page-width;
+        width: 800px;
         margin: 0 auto;
         padding: $main-spacing 0;
         display: flex;

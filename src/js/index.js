@@ -5,3 +5,4 @@ import '../js/typing.js';
 import '../js/slider.js';
 import '../js/certificatesGallery.js';
 import '../js/whyWorth.js';
+import '../js/scroller.js';
