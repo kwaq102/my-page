@@ -24,6 +24,7 @@
     .why-worth-desc {
         width: 50%;
         margin-left: 50%;
+        margin-bottom: $main-spacing*2;
 
         h1 {
             width: 50%;
@@ -104,13 +105,27 @@
         }
     }
 
-    p.why-worth-text {
+    div.description {
         height: 0;
         overflow: hidden;
-        transition: .2s linear;
+        transition: .4s linear;
+
+        p.why-worth-text {
+            margin: $main-spacing/4 0;
+            padding: 0;
+            text-align: justify;
+            font-size: $base-font-size;
+            line-height: 150%;
+
+            span {
+                font-weight: bold;
+            }
+        }
     }
 
-    p.why-worth-text.show {
-        height: 170px;
+    div.description.show {
+        height: 400px;
     }
+
+
 }

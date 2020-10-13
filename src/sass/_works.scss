@@ -2,7 +2,7 @@
     position: relative;
     background-image: url('/public/img/works.jpg');
     background-attachment: fixed;
-    padding: 50px 5% 80px;
+    padding: 50px 5% 60px;
 
     .how-works-bg {
         position: absolute;
@@ -32,17 +32,12 @@
             }
         }
 
-        div {
-            width: 80%;
-            margin-bottom: $main-spacing*2;
-
-            p {}
-        }
-
         ul {
             width: 80%;
-            display: flex;
+            margin: $main-spacing*2 auto;
             padding: 0;
+            display: flex;
+            justify-content: center;
             list-style-type: none;
 
             li {
@@ -77,13 +72,26 @@
             }
         }
 
-        .codingImg {
-            position: absolute;
-            width: 10%;
-            top: 50%;
-            right: 10%;
-            transform: translateY(-50%);
+        div {
+            width: 60%;
+            margin: $main-spacing*3 auto;
+            position: relative;
+
+            p {
+                font-size: 20px;
+                text-align: justify;
+                line-height: 200%;
+            }
+
+            .codingImg {
+                position: absolute;
+                width: 150px;
+                top: 50%;
+                right: -20%;
+                transform: translateY(-50%);
+            }
         }
+
     }
 }
 

@@ -1,0 +1,48 @@
+.tell-me {
+    width: $page-width;
+    margin: 0 auto;
+    padding: $main-spacing*3 0;
+    text-align: center;
+    border-bottom: 3px double $color-hover;
+
+    h3 {
+        margin: $main-spacing*2 0;
+        font-size: $base-font-size*3;
+        font-family: $heading-font;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: $color-gradient-gb;
+        background-size: 200% auto;
+        color: #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animationText 10s linear infinite;
+        display: inline-block;
+    }
+
+    p {
+        font-size: $base-font-size;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    p:nth-child(3) {
+        font-size: 24px;
+    }
+
+    p:nth-child(4) {
+        font-size: 32px;
+        text-transform: uppercase;
+
+    }
+
+}
+
+@keyframes animationText {
+    to {
+        background-position: 200% center;
+    }
+}
+
+// https://blog.robertorlinski.pl/2017/09/05/pojawianie-sie-elementow/

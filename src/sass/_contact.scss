@@ -3,7 +3,7 @@
     padding: $main-spacing*2 0;
     background-image: url('/public/img/bg.png');
     position: relative;
-
+    border-bottom: 5px double #343434;
 
     .contact-heading {
         width: $page-width;
@@ -30,7 +30,7 @@
         padding: $main-spacing;
         display: flex;
         justify-content: center;
-
+        border-bottom: 3px double $color-hover;
 
         .phone,
         .email {
@@ -66,8 +66,8 @@
 
             span {
                 transform: rotateY(-360deg);
+                color: $color-hover;
             }
-
         }
 
         .socials {
@@ -114,22 +114,27 @@
     .contact-desc {
         width: $page-width;
         margin: 0 auto;
-        padding: $main-spacing;
+        padding: $main-spacing*3 $main-spacing;
         display: flex;
         justify-content: center;
+
+        .question {
+            img {
+                width: 150px;
+            }
+        }
 
         .question-text {
             width: 30%;
             margin-left: $main-spacing*2;
 
             p {
-                margin: $main-spacing/2 0;
+                margin: $main-spacing/4 0;
                 padding: 0;
-                font-size: 18px;
+                font-size: 14px;
                 font-family: $text-font;
                 text-align: justify;
             }
         }
     }
-
 }

@@ -4,6 +4,7 @@
   "description": "Uslugi tworzenia stron internetowych",
   "main": "index.js",
   "dependencies": {
+    "bourbon": "^7.0.0",
     "gallery": "^1.0.2",
     "particles.js": "^2.0.0",
     "smooth-scroll": "^16.1.3",

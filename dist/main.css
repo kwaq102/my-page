@@ -148,7 +148,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   cursor: context-menu; }
-  #offer h1 {
+  #offer h2 {
     position: absolute;
     width: 50%;
     padding-bottom: 10px;
@@ -158,7 +158,7 @@ body {
     letter-spacing: 3px;
     border-bottom: 5px double #012840;
     font-size: 26px; }
-    #offer h1 span {
+    #offer h2 span {
       color: #0583F2; }
   #offer .offer {
     width: 29%;
@@ -175,7 +175,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      #offer .offer .offer-heading h4 {
+      #offer .offer .offer-heading h3 {
         width: 60%;
         font-size: 20px;
         font-family: "Roboto", sans-serif;
@@ -184,24 +184,33 @@ body {
       #offer .offer .offer-heading img {
         width: 40%; }
     #offer .offer .offer-description {
+      margin: 5px 0 0 0;
       padding: 5px;
       font-family: "Quicksand", sans-serif;
       text-align: justify;
-      line-height: 150%; }
+      line-height: 120%; }
+      #offer .offer .offer-description span {
+        margin-right: 5px;
+        transition: .8s linear; }
+      #offer .offer .offer-description:hover span {
+        transform: rotate(360deg);
+        transform-origin: center; }
     #offer .offer:hover {
       border: 1px solid black;
       opacity: 1; }
+      #offer .offer:hover .offer-description span {
+        color: #012840; }
 
 #personal-offer {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-image: url(img/water.jpg);
   background-attachment: fixed; }
   #personal-offer .personal-offer-bg {
     width: 100%;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.8); }
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.92); }
   #personal-offer .personal-offer-description {
     width: 1200px;
     position: absolute;
@@ -212,6 +221,79 @@ body {
     font-family: "Quicksand", sans-serif;
     color: white;
     line-height: 150%; }
+    #personal-offer .personal-offer-description h2 {
+      width: 65%;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      letter-spacing: 10px;
+      position: relative;
+      text-shadow: 1px 0px 1px white; }
+      #personal-offer .personal-offer-description h2::before, #personal-offer .personal-offer-description h2::after {
+        content: "";
+        width: 25px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: white; }
+      #personal-offer .personal-offer-description h2::before {
+        left: -10px; }
+      #personal-offer .personal-offer-description h2::after {
+        right: 0; }
+    #personal-offer .personal-offer-description p {
+      font-family: "Quicksand", sans-serif;
+      font-size: 16px;
+      line-height: 190%;
+      letter-spacing: 1px;
+      text-align: justify; }
+    #personal-offer .personal-offer-description button {
+      width: 200px;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 700;
+      background-color: transparent;
+      letter-spacing: 3px;
+      border: 3px solid #0583F2;
+      text-transform: uppercase;
+      color: #0583F2;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: color 300ms;
+      z-index: 1;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      outline: none; }
+      #personal-offer .personal-offer-description button:hover {
+        color: white; }
+      #personal-offer .personal-offer-description button::before {
+        content: '';
+        background-color: #0583F2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transform: scaleY(0);
+        transition: transform 600ms;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); }
+      #personal-offer .personal-offer-description button:hover::before {
+        transform: scaleY(1); }
+      #personal-offer .personal-offer-description button a {
+        text-decoration: none;
+        color: white; }
 
 #about {
   width: 1200px;
@@ -257,6 +339,27 @@ body {
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
       letter-spacing: 2px; }
+    #about .about .about-info {
+      margin: 20px 0;
+      padding: 0; }
+      #about .about .about-info ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin: 0;
+        padding: 0; }
+        #about .about .about-info ul li {
+          list-style: none;
+          font-size: 16px;
+          font-family: "Quicksand", sans-serif;
+          letter-spacing: 1px; }
+          #about .about .about-info ul li span {
+            margin-right: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            color: #34343466;
+            border-bottom: 2px solid #34343466;
+            letter-spacing: 0px; }
     #about .about .about-description {
       text-align: justify;
       line-height: 150%; }
@@ -347,7 +450,8 @@ body {
       left: 20%; }
   #why-worth .why-worth-desc {
     width: 50%;
-    margin-left: 50%; }
+    margin-left: 50%;
+    margin-bottom: 40px; }
     #why-worth .why-worth-desc h1 {
       width: 50%;
       margin: 0 0 20px 0;
@@ -405,18 +509,26 @@ body {
         transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); }
       #why-worth .why-worth-desc .read-more:hover::before {
         transform: scaleX(1); }
-  #why-worth p.why-worth-text {
+  #why-worth div.description {
     height: 0;
     overflow: hidden;
-    transition: .2s linear; }
-  #why-worth p.why-worth-text.show {
-    height: 170px; }
+    transition: .4s linear; }
+    #why-worth div.description p.why-worth-text {
+      margin: 5px 0;
+      padding: 0;
+      text-align: justify;
+      font-size: 16px;
+      line-height: 150%; }
+      #why-worth div.description p.why-worth-text span {
+        font-weight: bold; }
+  #why-worth div.description.show {
+    height: 400px; }
 
 #how-works {
   position: relative;
   background-image: url(img/works.jpg);
   background-attachment: fixed;
-  padding: 50px 5% 80px; }
+  padding: 50px 5% 60px; }
   #how-works .how-works-bg {
     position: absolute;
     top: 0;
@@ -437,13 +549,12 @@ body {
       font-size: 26px; }
       #how-works div h1 span {
         color: #0583F2; }
-    #how-works div div {
-      width: 80%;
-      margin-bottom: 40px; }
     #how-works div ul {
       width: 80%;
-      display: flex;
+      margin: 40px auto;
       padding: 0;
+      display: flex;
+      justify-content: center;
       list-style-type: none; }
       #how-works div ul li {
         font-size: 32px;
@@ -466,12 +577,20 @@ body {
           animation-delay: 1s; }
         #how-works div ul li .realization {
           animation-delay: 1.5s; }
-    #how-works div .codingImg {
-      position: absolute;
-      width: 10%;
-      top: 50%;
-      right: 10%;
-      transform: translateY(-50%); }
+    #how-works div div {
+      width: 60%;
+      margin: 60px auto;
+      position: relative; }
+      #how-works div div p {
+        font-size: 20px;
+        text-align: justify;
+        line-height: 200%; }
+      #how-works div div .codingImg {
+        position: absolute;
+        width: 150px;
+        top: 50%;
+        right: -20%;
+        transform: translateY(-50%); }
 
 @keyframes arrowAnimation {
   0% {
@@ -576,11 +695,46 @@ body {
   100% {
     width: 100%; } }
 
+.tell-me {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 3px double #012840; }
+  .tell-me h3 {
+    margin: 40px 0;
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, #50B4F2, #0583F2 20%, #50B4F2 40%, #012840 60%, #50B4F2 90%);
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animationText 10s linear infinite;
+    display: inline-block; }
+  .tell-me p {
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px; }
+  .tell-me p:nth-child(3) {
+    font-size: 24px; }
+  .tell-me p:nth-child(4) {
+    font-size: 32px;
+    text-transform: uppercase; }
+
+@keyframes animationText {
+  to {
+    background-position: 200% center; } }
+
 #contact {
   width: 100%;
   padding: 40px 0;
   background-image: url(img/bg.png);
-  position: relative; }
+  position: relative;
+  border-bottom: 5px double #343434; }
   #contact .contact-heading {
     width: 1200px;
     margin: 0; }
@@ -599,7 +753,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    border-bottom: 3px double #012840; }
     #contact .contact .phone,
     #contact .contact .email {
       margin: 40px 20px;
@@ -629,7 +784,8 @@ body {
       cursor: pointer; }
       #contact .contact .phone:hover span,
       #contact .contact .email:hover span {
-        transform: rotateY(-360deg); }
+        transform: rotateY(-360deg);
+        color: #012840; }
     #contact .contact .socials {
       display: flex;
       justify-content: center;
@@ -653,16 +809,18 @@ body {
   #contact .contact-desc {
     width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 60px 20px;
     display: flex;
     justify-content: center; }
+    #contact .contact-desc .question img {
+      width: 150px; }
     #contact .contact-desc .question-text {
       width: 30%;
       margin-left: 40px; }
       #contact .contact-desc .question-text p {
-        margin: 10px 0;
+        margin: 5px 0;
         padding: 0;
-        font-size: 18px;
+        font-size: 14px;
         font-family: "Quicksand", sans-serif;
         text-align: justify; }
 

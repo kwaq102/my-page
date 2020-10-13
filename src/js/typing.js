@@ -1,7 +1,7 @@
 const box = document.querySelector('.professions');
 const professions = [
     "Strony internetowe",
-    "Marketing w internecie",
+    "Pozycjonowanie",
     "Copywriting",
     "Social media"
 ];
