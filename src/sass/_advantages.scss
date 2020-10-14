@@ -1,10 +1,10 @@
 #advantages {
-    padding: $main-spacing 0;
+    padding: $main-spacing 0 $main-spacing*2;
     position: relative;
     overflow: hidden;
     z-index: 1;
 
-    h1 {
+    h2 {
         width: $page-width;
         margin: 0 auto $main-spacing*2 auto;
         padding: $main-spacing;
@@ -43,6 +43,37 @@
                 text-transform: uppercase;
             }
         }
+
+        .personal,
+        .learning,
+        .development,
+        .quality,
+        .service,
+        .flexible,
+        .honest,
+        .phone,
+        .time,
+        .coffee {
+            img {
+                transition: .2s linear;
+            }
+        }
+
+        .personal:hover,
+        .learning:hover,
+        .development:hover,
+        .quality:hover,
+        .service:hover,
+        .flexible:hover,
+        .honest:hover,
+        .phone:hover,
+        .time:hover,
+        .coffee:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+
     }
 }
 

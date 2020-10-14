@@ -37,10 +37,17 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  #home .my-name {
+  #home .title {
+    margin: 0;
+    padding: 0;
     font-size: 40px;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  #home .my-name {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 0;
     letter-spacing: 3px; }
   #home .professions {
     margin-bottom: 20px; }
@@ -432,7 +439,11 @@ body {
     #certificates div.certificates-gallery img {
       width: 20%;
       margin: 20px;
-      cursor: pointer; }
+      border-radius: 20px;
+      cursor: pointer;
+      transition: .2s linear; }
+    #certificates div.certificates-gallery img:hover {
+      transform: perspective(900px) rotateY(35deg); }
 
 #why-worth {
   padding: 100px 20% 30px 20%;
@@ -528,7 +539,7 @@ body {
   position: relative;
   background-image: url(img/works.jpg);
   background-attachment: fixed;
-  padding: 50px 5% 60px; }
+  padding: 40px 0; }
   #how-works .how-works-bg {
     position: absolute;
     top: 0;
@@ -539,16 +550,19 @@ body {
   #how-works div {
     position: relative;
     z-index: 1; }
-    #how-works div h1 {
-      width: 25%;
-      padding-bottom: 10px;
-      margin-bottom: 40px;
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 3px;
-      border-bottom: 5px double #012840;
-      font-size: 26px; }
-      #how-works div h1 span {
-        color: #0583F2; }
+    #how-works div .how-works-heading {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0; }
+      #how-works div .how-works-heading h2 {
+        width: 50%;
+        padding-bottom: 10px;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 3px;
+        border-bottom: 5px double #012840;
+        font-size: 26px; }
+        #how-works div .how-works-heading h2 span {
+          color: #0583F2; }
     #how-works div ul {
       width: 80%;
       margin: 40px auto;
@@ -578,7 +592,7 @@ body {
         #how-works div ul li .realization {
           animation-delay: 1.5s; }
     #how-works div div {
-      width: 60%;
+      width: 1200px;
       margin: 60px auto;
       position: relative; }
       #how-works div div p {
@@ -589,7 +603,7 @@ body {
         position: absolute;
         width: 150px;
         top: 50%;
-        right: -20%;
+        right: -18%;
         transform: translateY(-50%); }
 
 @keyframes arrowAnimation {
@@ -601,11 +615,11 @@ body {
     transform: scaleX(1.3); } }
 
 #advantages {
-  padding: 20px 0;
+  padding: 20px 0 40px;
   position: relative;
   overflow: hidden;
   z-index: 1; }
-  #advantages h1 {
+  #advantages h2 {
     width: 1200px;
     margin: 0 auto 40px auto;
     padding: 20px;
@@ -636,6 +650,28 @@ body {
         font-size: 16px;
         text-align: center;
         text-transform: uppercase; }
+    #advantages .advantages .personal img,
+    #advantages .advantages .learning img,
+    #advantages .advantages .development img,
+    #advantages .advantages .quality img,
+    #advantages .advantages .service img,
+    #advantages .advantages .flexible img,
+    #advantages .advantages .honest img,
+    #advantages .advantages .phone img,
+    #advantages .advantages .time img,
+    #advantages .advantages .coffee img {
+      transition: .2s linear; }
+    #advantages .advantages .personal:hover img,
+    #advantages .advantages .learning:hover img,
+    #advantages .advantages .development:hover img,
+    #advantages .advantages .quality:hover img,
+    #advantages .advantages .service:hover img,
+    #advantages .advantages .flexible:hover img,
+    #advantages .advantages .honest:hover img,
+    #advantages .advantages .phone:hover img,
+    #advantages .advantages .time:hover img,
+    #advantages .advantages .coffee:hover img {
+      transform: scale(1.2); }
 
 #advantages::before {
   content: '';
@@ -674,7 +710,7 @@ body {
       position: relative;
       display: inline-block;
       margin-top: 5%;
-      font-size: 50px;
+      font-size: 40px;
       font-weight: bold;
       font-family: "Roboto", sans-serif;
       letter-spacing: 3px;

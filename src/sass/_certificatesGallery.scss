@@ -52,7 +52,13 @@
         img {
             width: 20%;
             margin: $main-spacing;
+            border-radius: 20px;
             cursor: pointer;
+            transition: .2s linear;
+        }
+
+        img:hover {
+            transform: perspective(900px) rotateY(35deg);
         }
     }
 }

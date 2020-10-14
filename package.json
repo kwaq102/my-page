@@ -4,6 +4,7 @@
   "description": "Uslugi tworzenia stron internetowych",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.3.4",
     "bourbon": "^7.0.0",
     "gallery": "^1.0.2",
     "particles.js": "^2.0.0",
@@ -37,18 +38,5 @@
     "dev": "webpack --config ./config/webpack.config.dev.js"
   },
   "author": "Kamil Gajewski",
-  "license": "ISC",
-  "keywords": [
-    "strony",
-    "internetowe",
-    "www",
-    "blog",
-    "witryny",
-    "kamil",
-    "gajewski",
-    "elblag",
-    "uslugi",
-    "dobrze",
-    "nowoczesnie"
-  ]
+  "license": "ISC"
 }
