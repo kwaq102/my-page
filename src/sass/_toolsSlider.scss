@@ -41,3 +41,13 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    #tools {
+        width: $page-medium-width;
+
+        h1 {
+            width: 90%;
+        }
+    }
+}

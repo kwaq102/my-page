@@ -89,3 +89,36 @@
     background-image: url('/public/img/bg.png');
     z-index: -1;
 }
+
+
+@media (max-width: 1400px) {
+    #advantages {
+
+        .advantages {
+            row-gap: 20px;
+            column-gap: 10px;
+
+            .advantages-list {
+
+                img {
+                    height: 70px;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:1200px) {
+    #advantages {
+
+        h2 {
+            width: $page-medium-width;
+        }
+
+        .advantages {
+            width: $page-medium-width;
+            row-gap: 10px;
+        }
+    }
+}

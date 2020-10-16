@@ -11,22 +11,22 @@
 
         img.thinking {
             top: 20px;
-            left: 0;
+            left: -10%;
         }
 
         img.cloud {
             width: 260px;
             top: -50px;
-            left: 20%;
+            left: 11%;
         }
     }
 
     .why-worth-desc {
-        width: 50%;
+        width: 70%;
         margin-left: 50%;
         margin-bottom: $main-spacing*2;
 
-        h1 {
+        h2 {
             width: 50%;
             margin: 0 0 $main-spacing 0;
             padding: $main-spacing/2;
@@ -126,6 +126,49 @@
     div.description.show {
         height: 400px;
     }
+}
 
+@media (max-width: 1200px) {
+    #why-worth {
+        .images {
+            img.thinking {
+                width: 35%;
+            }
 
+            img.cloud {
+                width: 30%;
+            }
+        }
+
+        .why-worth-desc {
+            width: 80%;
+
+            h2 {
+                font-size: 22px;
+            }
+
+            div {
+                h6 {
+                    font-size: 18px;
+
+                    span {
+                        img {
+                            width: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.description {
+
+            p.why-worth-text {
+                font-size: 14px;
+            }
+        }
+
+        div.description.show {
+            height: 400px;
+        }
+    }
 }

@@ -129,3 +129,29 @@
         top: 29%;
     }
 }
+
+@media (max-width: 1400px) {
+    #home {
+        top: 40%;
+    }
+}
+
+@media (max-width: 1200px) {
+    #home {
+
+        .my-photo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        .title {
+            font-size: $size-h2;
+        }
+
+        .my-name {
+            font-size: $size-h3;
+        }
+    }
+}

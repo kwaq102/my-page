@@ -115,8 +115,27 @@
                 text-decoration: none;
                 color: white
             }
-
         }
+    }
+}
 
+@media (max-width: 1200px) {
+    #personal-offer {
+
+        .personal-offer-description {
+            width: $page-medium-width;
+            font-size: 14px;
+            line-height: 130%;
+
+            h2 {
+                width: 90%;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 170%;
+            }
+        }
     }
 }

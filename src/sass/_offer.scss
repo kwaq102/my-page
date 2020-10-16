@@ -93,3 +93,32 @@
 
 
 }
+
+@media (max-width: 1200px) {
+    #offer {
+        width: $page-medium-width;
+
+
+        .offer {
+            width: 40%;
+            height: 350px;
+
+            .offer-heading {
+                h3 {
+                    width: 60%;
+                    font-size: 18px;
+                }
+
+                img {
+                    padding-top: 10px;
+                    width: 30%;
+                    height: 50px;
+                }
+            }
+
+            .offer-description {
+                font-size: 14px;
+            }
+        }
+    }
+}

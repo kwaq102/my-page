@@ -60,3 +60,11 @@
         width: 100%
     }
 }
+
+@media(max-width:1200px) {
+    #projects {
+        .loading-projects {
+            width: $page-medium-width;
+        }
+    }
+}

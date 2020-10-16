@@ -90,3 +90,33 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    #about {
+        width: 90%;
+
+        .about-img {
+            margin-left: 0;
+            max-width: 35%;
+        }
+
+        .about {
+            width: 60%;
+            padding: 0 $main-spacing*2;
+
+            h2 {
+                margin-top: 0;
+            }
+
+            .about-info {
+
+                ul {
+
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

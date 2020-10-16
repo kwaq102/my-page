@@ -21,6 +21,7 @@
     }
 
     p {
+        font-family: $heading-font;
         font-size: $base-font-size;
         font-weight: bold;
         font-size: 20px;
@@ -44,5 +45,3 @@
         background-position: 200% center;
     }
 }
-
-// https://blog.robertorlinski.pl/2017/09/05/pojawianie-sie-elementow/
