@@ -120,3 +120,33 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    #about {
+        width: 90%;
+
+        .about-img {
+            max-width: 40%;
+        }
+
+        .about {
+            width: 60%;
+            padding: 0 $main-spacing/2 0 $main-spacing*2;
+
+
+            .about-info {
+
+                ul {
+
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .about-description {
+                font-size: 14px;
+            }
+        }
+    }
+}

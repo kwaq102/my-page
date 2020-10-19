@@ -180,3 +180,33 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    #how-works {
+
+        div {
+
+            ul {
+                margin: 30px 0;
+
+                li {
+                    font-size: 20px;
+
+                    img {
+                        margin: 0 20px 0 5px
+                    }
+                }
+            }
+
+            div {
+                margin: 20px auto;
+
+                p {
+                    width: 80%;
+                    font-size: 16px;
+                    line-height: 190%;
+                }
+            }
+        }
+    }
+}

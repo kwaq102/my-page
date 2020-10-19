@@ -40,7 +40,6 @@
         background: rgba(52, 52, 52, .4);
         animation: waves 15s linear infinite;
     }
-
 }
 
 
@@ -52,5 +51,13 @@
     100% {
         transform: translate(-50%, -75%) rotate(360deg)
     }
+}
 
+@media(max-width: 1024px) {
+    #footer {
+
+        .waves {
+            height: 230px;
+        }
+    }
 }

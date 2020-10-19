@@ -653,7 +653,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var burger = document.querySelector('.btn-burger');\nvar nav = document.querySelector('.navigation');\nburger.addEventListener('click', function () {\n  burger.classList.toggle('active');\n\n  if (burger.classList.contains('active')) {\n    nav.classList.add('showNav');\n  } else {\n    nav.classList.remove('showNav');\n  }\n});\n\n//# sourceURL=webpack:///./src/js/burger.js?");
+eval("var burger = document.querySelector('.burger');\nvar nav = document.querySelector('.navigation');\nburger.addEventListener(\"click\", function () {\n  burger.classList.toggle(\"on\");\n  nav.classList.toggle(\"showNav\");\n});\n\n//# sourceURL=webpack:///./src/js/burger.js?");
 
 /***/ }),
 

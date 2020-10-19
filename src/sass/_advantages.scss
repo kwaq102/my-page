@@ -122,3 +122,16 @@
         }
     }
 }
+
+@media(max-width:1024px) {
+    #advantages {
+
+        .advantages {
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+
+    #advantages::before {
+        transform: scaleX(2);
+    }
+}

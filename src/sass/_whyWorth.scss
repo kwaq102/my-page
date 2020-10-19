@@ -124,7 +124,7 @@
     }
 
     div.description.show {
-        height: 400px;
+        height: 330px;
     }
 }
 
@@ -164,6 +164,114 @@
 
             p.why-worth-text {
                 font-size: 14px;
+            }
+        }
+
+        div.description.show {
+            height: 400px;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    #why-worth {
+        padding: 100px 15% 30px 10%;
+
+        .images {
+            img.thinking {
+                top: 35px
+            }
+
+            img.cloud {
+                top: -40px;
+            }
+        }
+
+        .why-worth-desc {
+            width: auto;
+            margin-left: 50%;
+
+            h2 {
+                width: 80%;
+            }
+
+            div {
+                h6 {
+                    font-size: 18px;
+
+                    span {
+                        margin-right: $main-spacing/2;
+
+                        img {
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+
+            .read-more {
+                width: 190px;
+                position: relative;
+                margin-top: $main-spacing;
+                padding: $main-spacing/2 $main-spacing;
+                font-size: 14px;
+                font-family: $heading-font;
+                font-weight: 700;
+                background-color: transparent;
+                letter-spacing: 3px;
+                border: 3px solid $color-primary;
+                text-transform: uppercase;
+                color: $color-primary;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: color 300ms;
+                z-index: 1;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                outline: none;
+
+                &:hover {
+                    color: white;
+                }
+
+                &::before {
+                    content: '';
+                    background-color: $color-primary;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    transform: scaleX(0);
+
+                    transition: transform 600ms;
+                    transform-origin: 0 0;
+                    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+                }
+
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+            }
+        }
+
+        div.description {
+            height: 0;
+            overflow: hidden;
+            transition: .4s linear;
+
+            p.why-worth-text {
+                margin: $main-spacing/4 0;
+                padding: 0;
+                text-align: justify;
+                font-size: $base-font-size;
+                line-height: 150%;
+
+                span {
+                    font-weight: bold;
+                }
             }
         }
 
