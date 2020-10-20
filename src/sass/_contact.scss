@@ -114,7 +114,7 @@
         .contact-desc {
             width: $page-width;
             margin: 0 auto;
-            padding: $main-spacing*3 $main-spacing;
+            padding: $main-spacing*3 0;
             display: flex;
             justify-content: center;
 
@@ -164,6 +164,32 @@
 
             .contact-desc {
                 width: $page-medium-width;
+            }
+        }
+    }
+
+
+
+    @media(max-width:900px) {
+        #contact {
+
+            .contact-heading {
+                width: 100%;
+            }
+
+            .tell-me {
+                width: 100%;
+            }
+
+            .contact {
+                width: 100%;
+                flex-wrap: wrap;
+                padding: 0;
+
+            }
+
+            .contact-desc {
+                width: 100%;
             }
         }
     }

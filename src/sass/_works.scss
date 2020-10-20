@@ -199,6 +199,7 @@
             }
 
             div {
+                width: 100%;
                 margin: 20px auto;
 
                 p {
@@ -209,4 +210,52 @@
             }
         }
     }
+}
+
+@media(max-width: 900px) {
+    #how-works {
+        padding: $main-spacing 0;
+
+        div {
+            .how-works-heading {
+                width: 100%;
+
+                h2 {
+                    margin-left: $main-spacing;
+                }
+            }
+
+            ul {
+
+                li {
+                    font-size: 16px;
+
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+
+            div {
+                flex-direction: column;
+
+                p {
+                    margin: 0 auto;
+                }
+
+                div.how-works-heading-img {
+                    width: 100%;
+
+                    .codingImg {
+                        position: static;
+                        transform: translateY(0);
+                        width: 20%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+
 }

@@ -68,3 +68,11 @@
         }
     }
 }
+
+@media(max-width:900px) {
+    #projects {
+        .loading-projects {
+            width: 100%;
+        }
+    }
+}

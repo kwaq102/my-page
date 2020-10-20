@@ -135,3 +135,30 @@
         transform: scaleX(2);
     }
 }
+
+@media(max-width:900px) {
+    #advantages {
+        width: 100%;
+        padding: $main-spacing 0;
+
+        h2 {
+            width: 100%;
+            padding: $main-spacing 0;
+        }
+
+        .advantages {
+            width: 100%;
+
+            .advantages-list {
+
+                h6 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #advantages::before {
+        transform: scaleX(2.5);
+    }
+}

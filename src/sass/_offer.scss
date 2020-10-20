@@ -122,3 +122,18 @@
         }
     }
 }
+
+@media(max-width: 900px) {
+    #offer {
+        width: 90%;
+        margin: 0 auto;
+        margin: $main-spacing;
+
+        h2 {}
+
+        .offer {
+            width: 40%;
+            padding: $main-spacing;
+        }
+    }
+}

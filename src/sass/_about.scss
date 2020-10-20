@@ -1,7 +1,6 @@
 #about {
     width: $page-width;
     margin: $main-spacing*2 auto;
-
     display: flex;
 
     .about-img {
@@ -147,6 +146,23 @@
             .about-description {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    #about {
+        width: 100%;
+        flex-direction: column;
+
+        .about-img {
+            margin: 40px auto 0 auto;
+        }
+
+        .about {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
         }
     }
 }

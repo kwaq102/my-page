@@ -104,8 +104,6 @@
             }
         }
     }
-
-
 }
 
 @keyframes down {
@@ -152,6 +150,40 @@
 
         .my-name {
             font-size: $size-h3;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #home {
+        width: 80%;
+
+        .title {
+            font-size: 34px;
+            text-align: center;
+        }
+
+        .my-name {
+            font-size: 24px;
+        }
+
+        .socials {
+            width: 60%;
+            margin: 10px auto;
+
+            a {
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                color: white;
+                font-size: 14px;
+                border: 1px solid gray;
+                transition: 1s linear;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
         }
     }
 }
