@@ -131,7 +131,7 @@
     }
 }
 
-@media(max-width: 756px) {
+@media(max-width: 768px) {
     #offer {
 
         h2 {
@@ -140,6 +140,20 @@
 
         .offer {
             width: 60%;
+        }
+    }
+}
+
+
+@media(max-width: 756px) {
+    #offer {
+
+        h2 {
+            font-size: 22px;
+        }
+
+        .offer {
+            width: 85%;
         }
     }
 }

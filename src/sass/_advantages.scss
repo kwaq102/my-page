@@ -164,7 +164,7 @@
 }
 
 
-@media(max-width: 756px) {
+@media(max-width: 768px) {
     #advantages {
 
         .advantages {
@@ -174,5 +174,21 @@
 
     #advantages::before {
         transform: scaleX(3);
+    }
+}
+
+@media(max-width: 576px) {
+    #advantages {
+        h2 {
+            font-size: 22px;
+        }
+
+        .advantages {
+            grid-template-columns: auto auto;
+        }
+    }
+
+    #advantages::before {
+        transform: scaleX(4.5);
     }
 }

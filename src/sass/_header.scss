@@ -140,8 +140,6 @@
         .my-photo {
             width: 100px;
             height: 100px;
-            margin-bottom: 10px;
-            border-radius: 50%;
         }
 
         .title {
@@ -170,6 +168,36 @@
         .socials {
             width: 60%;
             margin: 10px auto;
+
+            a {
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                color: white;
+                font-size: 14px;
+                border: 1px solid gray;
+                transition: 1s linear;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #home {
+
+        .title {
+            font-size: 20px;
+        }
+
+        .my-name {
+            font-size: 18px;
+        }
+
+        .socials {
 
             a {
                 width: 34px;

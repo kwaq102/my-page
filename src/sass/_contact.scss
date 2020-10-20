@@ -1,232 +1,286 @@
+#contact {
+    width: 100%;
+    padding: $main-spacing*2 0;
+    background-image: url('/public/img/bg.png');
+    position: relative;
+    border-bottom: 5px double #343434;
+
+    .contact-heading {
+        width: $page-width;
+        margin: 0;
+
+        h2 {
+            width: 50%;
+            margin: 0 auto $main-spacing auto;
+            padding: $main-spacing/2;
+            font-family: $heading-font;
+            font-size: 26px;
+            letter-spacing: 3px;
+            border-bottom: 5px double $color-hover;
+
+            span {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .contact {
+        width: $page-width;
+        margin: 0 auto;
+        padding: $main-spacing;
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px double $color-hover;
+
+        .phone,
+        .email {
+            margin: $main-spacing*2 $main-spacing;
+            text-align: center;
+
+            span {
+                display: block;
+                font-size: 50px;
+                transition: .3s linear;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+            }
+
+            p,
+            a {
+                margin: 0;
+                padding: $main-spacing;
+                font-size: $base-font-size;
+                transition: .3s linear;
+                font-weight: bold;
+                font-family: $heading-font;
+            }
+        }
+
+        .phone:hover,
+        .email:hover {
+            cursor: pointer;
+
+            span {
+                transform: rotateY(-360deg);
+                color: $color-hover;
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            div {
+                margin: 0 $main-spacing;
+                padding: $main-spacing/2;
+
+                a {
+                    display: block;
+                    color: black;
+                    transition: .3s linear;
+
+                    span {
+                        font-size: 70px;
+                    }
+                }
+            }
+
+            .facebook {
+                a:hover {
+                    color: #3578E5;
+                }
+            }
+
+            .linkedin {
+                a:hover {
+                    color: #0073b1;
+                }
+            }
+
+            .git {
+                a:hover {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .contact-desc {
+        width: $page-width;
+        margin: 0 auto;
+        padding: $main-spacing*3 0;
+        display: flex;
+        justify-content: center;
+
+        .question {
+            img {
+                width: 150px;
+            }
+        }
+
+        .question-text {
+            width: 30%;
+            margin-left: $main-spacing*2;
+
+            p {
+                margin: $main-spacing/4 0;
+                padding: 0;
+                font-size: 14px;
+                font-family: $text-font;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
     #contact {
-        width: 100%;
-        padding: $main-spacing*2 0;
-        background-image: url('/public/img/bg.png');
-        position: relative;
-        border-bottom: 5px double #343434;
 
         .contact-heading {
-            width: $page-width;
-            margin: 0;
+            width: $page-medium-width;
+        }
 
-            h2 {
-                width: 50%;
-                margin: 0 auto $main-spacing auto;
-                padding: $main-spacing/2;
-                font-family: $heading-font;
-                font-size: 26px;
-                letter-spacing: 3px;
-                border-bottom: 5px double $color-hover;
+        .tell-me {
+            width: $page-medium-width;
+        }
 
-                span {
-                    color: $color-primary;
+        .contact {
+            width: $page-medium-width;
+
+            .phone,
+            .email {
+                a {
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
         }
 
+        .contact-desc {
+            width: $page-medium-width;
+        }
+    }
+}
+
+
+
+@media(max-width:900px) {
+    #contact {
+
+        .contact-heading {
+            width: 100%;
+        }
+
+        .tell-me {
+            width: 100%;
+        }
+
         .contact {
-            width: $page-width;
-            margin: 0 auto;
-            padding: $main-spacing;
-            display: flex;
-            justify-content: center;
-            border-bottom: 3px double $color-hover;
+            width: 100%;
+            flex-wrap: wrap;
+            padding: 0;
+
+        }
+
+        .contact-desc {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #contact {
+        .contact-heading {
+
+            h2 {
+                margin: 0 0 $main-spacing $main-spacing;
+            }
+        }
+
+        .contact {
 
             .phone,
             .email {
-                margin: $main-spacing*2 $main-spacing;
-                text-align: center;
-
                 span {
-                    display: block;
-                    font-size: 50px;
-                    transition: .3s linear;
-                }
-
-                a {
-                    display: block;
-                    text-decoration: none;
-                    color: black;
-                }
-
-                p,
-                a {
-                    margin: 0;
-                    padding: $main-spacing;
-                    font-size: $base-font-size;
-                    transition: .3s linear;
-                    font-weight: bold;
-                    font-family: $heading-font;
-                }
-            }
-
-            .phone:hover,
-            .email:hover {
-                cursor: pointer;
-
-                span {
-                    transform: rotateY(-360deg);
-                    color: $color-hover;
+                    font-size: 40px;
                 }
             }
 
             .socials {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
 
                 div {
-                    margin: 0 $main-spacing;
-                    padding: $main-spacing/2;
-
                     a {
-                        display: block;
-                        color: black;
-                        transition: .3s linear;
 
                         span {
-                            font-size: 70px;
+                            font-size: 50px;
                         }
-                    }
-                }
-
-                .facebook {
-                    a:hover {
-                        color: #3578E5;
-                    }
-                }
-
-                .linkedin {
-                    a:hover {
-                        color: #0073b1;
-                    }
-                }
-
-                .git {
-                    a:hover {
-                        color: gray;
                     }
                 }
             }
         }
 
         .contact-desc {
-            width: $page-width;
-            margin: 0 auto;
-            padding: $main-spacing*3 0;
             display: flex;
+            flex-direction: column;
+            width: 80%;
             justify-content: center;
-
-            .question {
-                img {
-                    width: 150px;
-                }
-            }
+            align-items: center;
 
             .question-text {
-                width: 30%;
-                margin-left: $main-spacing*2;
+                width: 80%;
 
                 p {
-                    margin: $main-spacing/4 0;
-                    padding: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #contact {
+        .contact-heading {
+
+            h2 {
+                width: 70%;
+                font-size: 22px;
+            }
+        }
+
+        .contact {
+
+            .phone,
+            .email {
+                margin: $main-spacing*2 $main-spacing/2;
+
+                p,
+                a {
+                    padding: 10px;
                     font-size: 14px;
-                    font-family: $text-font;
-                    text-align: justify;
+                }
+
+                span {
+                    font-size: 40px;
                 }
             }
-        }
-    }
 
-    @media(max-width: 1200px) {
-        #contact {
+            .socials {
 
-            .contact-heading {
-                width: $page-medium-width;
-            }
-
-            .tell-me {
-                width: $page-medium-width;
-            }
-
-            .contact {
-                width: $page-medium-width;
-
-                .phone,
-                .email {
+                div {
                     a {
-                        padding-left: 0;
-                        padding-right: 0;
-                    }
-                }
-            }
 
-            .contact-desc {
-                width: $page-medium-width;
-            }
-        }
-    }
-
-
-
-    @media(max-width:900px) {
-        #contact {
-
-            .contact-heading {
-                width: 100%;
-            }
-
-            .tell-me {
-                width: 100%;
-            }
-
-            .contact {
-                width: 100%;
-                flex-wrap: wrap;
-                padding: 0;
-
-            }
-
-            .contact-desc {
-                width: 100%;
-            }
-        }
-    }
-
-    @media(max-width: 756px) {
-        #contact {
-            .contact {
-
-                .phone,
-                .email {
-                    span {
-                        font-size: 40px;
-                    }
-                }
-
-                .socials {
-
-                    div {
-                        a {
-
-                            span {
-                                font-size: 50px;
-                            }
+                        span {
+                            font-size: 50px;
                         }
                     }
                 }
             }
-
-            .contact-desc {
-
-                .question-text {
-                    width: 35%;
-
-                    p {
-                        font-size: 12px;
-                    }
-                }
-            }
         }
     }
+}

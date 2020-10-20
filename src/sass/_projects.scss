@@ -77,11 +77,22 @@
     }
 }
 
-@media(max-width:756px) {
+@media(max-width:768px) {
     #projects {
         .loading-projects {
             h2 {
                 width: 50%;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    #projects {
+        .loading-projects {
+            h2 {
+                font-size: 22px;
+                width: 60%;
             }
         }
     }

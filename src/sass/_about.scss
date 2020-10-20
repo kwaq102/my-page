@@ -167,7 +167,7 @@
     }
 }
 
-@media(max-width: 756px) {
+@media(max-width: 768px) {
     #about {
         .about {
             .about-info {
@@ -175,6 +175,15 @@
                     grid-template-columns: 1fr;
                 }
             }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #about {
+
+        .about-img {
+            max-width: 75%;
         }
     }
 }

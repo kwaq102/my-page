@@ -91,12 +91,31 @@
     }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 768px) {
     #certificates {
         div {
             h2 {
                 width: 50%;
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #certificates {
+        div {
+            h2 {
+                width: 65%;
+                font-size: 10px;
+                letter-spacing: 6px;
+            }
+        }
+
+        div.certificates-gallery {
+
+            img {
+                width: 35%;
             }
         }
     }

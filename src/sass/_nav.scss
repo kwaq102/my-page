@@ -74,3 +74,10 @@
         transform: translateX(99%);
     }
 }
+
+@media(max-width: 756px) {
+    .navigation {
+        left: -40%;
+        width: 40%;
+    }
+}
