@@ -337,6 +337,12 @@ body {
       width: 40%;
       padding: 20px; } }
 
+@media (max-width: 756px) {
+  #offer h2 {
+    font-size: 26px; }
+  #offer .offer {
+    width: 60%; } }
+
 #personal-offer {
   position: relative;
   width: 100%;
@@ -457,50 +463,12 @@ body {
       #personal-offer .personal-offer-description p {
         font-size: 12px;
         padding: 0 20px;
-        line-height: 180%; }
-      #personal-offer .personal-offer-description button {
-        width: 200px;
-        position: absolute;
-        bottom: -70px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px 20px;
-        font-size: 14px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        background-color: transparent;
-        letter-spacing: 3px;
-        border: 3px solid #0583F2;
-        text-transform: uppercase;
-        color: #0583F2;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: color 300ms;
-        z-index: 1;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        outline: none; }
-        #personal-offer .personal-offer-description button:hover {
-          color: white; }
-        #personal-offer .personal-offer-description button::before {
-          content: '';
-          background-color: #0583F2;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          z-index: -1;
-          transform: scaleY(0);
-          transition: transform 600ms;
-          transform-origin: 0 0;
-          transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); }
-        #personal-offer .personal-offer-description button:hover::before {
-          transform: scaleY(1); }
-        #personal-offer .personal-offer-description button a {
-          text-decoration: none;
-          color: white; } }
+        line-height: 180%; } }
+
+@media (max-width: 756px) {
+  #personal-offer .personal-offer-description h2 {
+    width: 70%;
+    font-size: 12px; } }
 
 #about {
   width: 1200px;
@@ -609,10 +577,14 @@ body {
       margin: 0 auto;
       padding: 20px; } }
 
+@media (max-width: 756px) {
+  #about .about .about-info ul {
+    grid-template-columns: 1fr; } }
+
 #tools {
   width: 1200px;
   margin: 20px auto; }
-  #tools h1 {
+  #tools h2 {
     width: 45%;
     margin: 0 auto;
     font-size: 14px;
@@ -622,7 +594,7 @@ body {
     font-family: "Roboto", sans-serif;
     letter-spacing: 10px;
     position: relative; }
-    #tools h1::before, #tools h1::after {
+    #tools h2::before, #tools h2::after {
       content: "";
       width: 25px;
       height: 1px;
@@ -630,9 +602,9 @@ body {
       top: 50%;
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.2); }
-    #tools h1::before {
+    #tools h2::before {
       left: -10px; }
-    #tools h1::after {
+    #tools h2::after {
       right: 0; }
   #tools .tools-slider.my-slider img {
     padding: 20px; }
@@ -640,20 +612,24 @@ body {
 @media (max-width: 1200px) {
   #tools {
     width: 800px; }
-    #tools h1 {
+    #tools h2 {
       width: 90%; } }
 
 @media (max-width: 1024px) {
   #tools {
     width: 800px; }
-    #tools h1 {
+    #tools h2 {
       width: 75%; } }
 
 @media (max-width: 900px) {
   #tools {
     width: 90%; }
-    #tools h1 {
+    #tools h2 {
       width: 75%; } }
+
+@media (max-width: 756px) {
+  #tools h2 {
+    font-size: 12px; } }
 
 #certificates {
   background-image: url(img/mountains.jpg);
@@ -662,7 +638,7 @@ body {
     width: 100%;
     padding: 10px 0;
     background-color: #fff; }
-    #certificates div h1 {
+    #certificates div h2 {
       width: 20%;
       margin: 0 auto;
       font-size: 14px;
@@ -672,7 +648,7 @@ body {
       font-family: "Roboto", sans-serif;
       letter-spacing: 10px;
       position: relative; }
-      #certificates div h1::before, #certificates div h1::after {
+      #certificates div h2::before, #certificates div h2::after {
         content: "";
         width: 25px;
         height: 1px;
@@ -680,9 +656,9 @@ body {
         top: 50%;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.2); }
-      #certificates div h1::before {
+      #certificates div h2::before {
         left: -10px; }
-      #certificates div h1::after {
+      #certificates div h2::after {
         right: 0; }
   #certificates div.certificates-gallery {
     width: 800px;
@@ -702,16 +678,21 @@ body {
       transform: perspective(900px) rotateY(35deg); }
 
 @media (max-width: 1200px) {
-  #certificates div h1 {
+  #certificates div h2 {
     width: 26%; } }
 
 @media (max-width: 1024px) {
-  #certificates div h1 {
+  #certificates div h2 {
     width: 35%; } }
 
 @media (max-width: 900px) {
   #certificates div.certificates-gallery {
     width: 100%; } }
+
+@media (max-width: 756px) {
+  #certificates div h2 {
+    width: 50%;
+    font-size: 12px; } }
 
 #why-worth {
   padding: 100px 20% 30px 20%;
@@ -887,6 +868,10 @@ body {
     #why-worth div.description.show {
       height: 300px; } }
 
+@media (max-width: 756px) {
+  #why-worth div.description.show {
+    height: 400px; } }
+
 #how-works {
   position: relative;
   background-image: url(img/works.jpg);
@@ -1033,6 +1018,17 @@ body {
           width: 20%;
           margin: 0 auto; } }
 
+@media (max-width: 756px) {
+  #how-works div .how-works-heading h2 {
+    width: 70%; }
+  #how-works div ul {
+    margin: 0 auto; }
+    #how-works div ul li {
+      font-size: 14px; }
+      #how-works div ul li img {
+        width: 14px;
+        margin: 0 10px 0 5px; } }
+
 #advantages {
   padding: 20px 0 40px;
   position: relative;
@@ -1138,6 +1134,12 @@ body {
   #advantages::before {
     transform: scaleX(2.5); } }
 
+@media (max-width: 756px) {
+  #advantages .advantages {
+    grid-template-columns: auto auto auto; }
+  #advantages::before {
+    transform: scaleX(3); } }
+
 #projects {
   width: 100%;
   height: 300px;
@@ -1148,7 +1150,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     text-align: center; }
-    #projects .loading-projects h1 {
+    #projects .loading-projects h2 {
       width: 25%;
       padding-bottom: 10px;
       text-align: left;
@@ -1157,7 +1159,7 @@ body {
       border-bottom: 5px double #012840;
       font-size: 26px;
       color: white; }
-      #projects .loading-projects h1 span {
+      #projects .loading-projects h2 span {
         color: #0583F2; }
     #projects .loading-projects .loading {
       position: relative;
@@ -1192,6 +1194,10 @@ body {
   #projects .loading-projects {
     width: 100%; } }
 
+@media (max-width: 756px) {
+  #projects .loading-projects h2 {
+    width: 50%; } }
+
 .tell-me {
   width: 1200px;
   margin: 0 auto;
@@ -1213,7 +1219,6 @@ body {
     display: inline-block; }
   .tell-me p {
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 2px; }
@@ -1226,6 +1231,16 @@ body {
 @keyframes animationText {
   to {
     background-position: 200% center; } }
+
+@media (max-width: 756px) {
+  .tell-me h3 {
+    font-size: 32px; }
+  .tell-me p {
+    font-size: 16px; }
+  .tell-me p:nth-child(3) {
+    font-size: 20px; }
+  .tell-me p:nth-child(4) {
+    font-size: 26px; } }
 
 #contact {
   width: 100%;
@@ -1347,6 +1362,17 @@ body {
     padding: 0; }
   #contact .contact-desc {
     width: 100%; } }
+
+@media (max-width: 756px) {
+  #contact .contact .phone span,
+  #contact .contact .email span {
+    font-size: 40px; }
+  #contact .contact .socials div a span {
+    font-size: 50px; }
+  #contact .contact-desc .question-text {
+    width: 35%; }
+    #contact .contact-desc .question-text p {
+      font-size: 12px; } }
 
 #feet {
   width: 100%;

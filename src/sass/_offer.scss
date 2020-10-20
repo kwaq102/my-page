@@ -86,12 +86,7 @@
                 }
             }
         }
-
     }
-
-
-
-
 }
 
 @media (max-width: 1200px) {
@@ -129,11 +124,22 @@
         margin: 0 auto;
         margin: $main-spacing;
 
-        h2 {}
-
         .offer {
             width: 40%;
             padding: $main-spacing;
+        }
+    }
+}
+
+@media(max-width: 756px) {
+    #offer {
+
+        h2 {
+            font-size: 26px;
+        }
+
+        .offer {
+            width: 60%;
         }
     }
 }

@@ -166,3 +166,15 @@
         }
     }
 }
+
+@media(max-width: 756px) {
+    #about {
+        .about {
+            .about-info {
+                ul {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}

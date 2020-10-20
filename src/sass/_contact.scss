@@ -193,3 +193,40 @@
             }
         }
     }
+
+    @media(max-width: 756px) {
+        #contact {
+            .contact {
+
+                .phone,
+                .email {
+                    span {
+                        font-size: 40px;
+                    }
+                }
+
+                .socials {
+
+                    div {
+                        a {
+
+                            span {
+                                font-size: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact-desc {
+
+                .question-text {
+                    width: 35%;
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }

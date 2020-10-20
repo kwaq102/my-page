@@ -7,7 +7,7 @@
         padding: $main-spacing/2 0;
         background-color: #fff;
 
-        h1 {
+        h2 {
             width: 20%;
             margin: 0 auto;
             font-size: 14px;
@@ -65,7 +65,7 @@
 @media (max-width: 1200px) {
     #certificates {
         div {
-            h1 {
+            h2 {
                 width: 26%;
             }
         }
@@ -75,7 +75,7 @@
 @media (max-width: 1024px) {
     #certificates {
         div {
-            h1 {
+            h2 {
                 width: 35%;
             }
         }
@@ -87,6 +87,17 @@
 
         div.certificates-gallery {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 756px) {
+    #certificates {
+        div {
+            h2 {
+                width: 50%;
+                font-size: 12px;
+            }
         }
     }
 }

@@ -256,6 +256,31 @@
             }
         }
     }
+}
 
+@media(max-width: 756px) {
+    #how-works {
 
+        div {
+            .how-works-heading {
+
+                h2 {
+                    width: 70%;
+                }
+            }
+
+            ul {
+                margin: 0 auto;
+
+                li {
+                    font-size: 14px;
+
+                    img {
+                        width: 14px;
+                        margin: 0 10px 0 5px;
+                    }
+                }
+            }
+        }
+    }
 }

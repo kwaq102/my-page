@@ -2,7 +2,7 @@
     width: $page-width;
     margin: $main-spacing auto;
 
-    h1 {
+    h2 {
         width: 45%;
         margin: 0 auto;
         font-size: 14px;
@@ -46,7 +46,7 @@
     #tools {
         width: $page-medium-width;
 
-        h1 {
+        h2 {
             width: 90%;
         }
     }
@@ -56,7 +56,7 @@
     #tools {
         width: $page-medium-width;
 
-        h1 {
+        h2 {
             width: 75%;
         }
     }
@@ -67,8 +67,17 @@
     #tools {
         width: 90%;
 
-        h1 {
+        h2 {
             width: 75%;
+        }
+    }
+}
+
+@media(max-width: 756px) {
+    #tools {
+
+        h2 {
+            font-size: 12px;
         }
     }
 }

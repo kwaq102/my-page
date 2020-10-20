@@ -162,3 +162,17 @@
         transform: scaleX(2.5);
     }
 }
+
+
+@media(max-width: 756px) {
+    #advantages {
+
+        .advantages {
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    #advantages::before {
+        transform: scaleX(3);
+    }
+}
