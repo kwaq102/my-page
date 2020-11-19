@@ -132,7 +132,6 @@
                     }
                 }
             }
-
         }
     }
 }
@@ -144,7 +143,6 @@
             ul {
                 width: 95%;
             }
-
         }
     }
 }
@@ -306,19 +304,35 @@
             }
 
             div {
-
-                p {
-                    font-size: 14px;
-                }
-
                 div.how-works-heading-img {
 
                     .codingImg {
-                        width: 50%;
+                        width: 40%;
                     }
                 }
             }
+        }
+    }
+}
 
+@media(max-width: 360px) {
+    #how-works {
+
+        div {
+            .how-works-heading {
+
+                h2 {
+                    font-size: 20px;
+                    width: 85%;
+                }
+            }
+
+            ul {
+
+                li {
+                    font-size: 16px;
+                }
+            }
         }
     }
 }

@@ -139,7 +139,7 @@
         }
 
         .offer {
-            width: 60%;
+            width: 40%;
         }
     }
 }
@@ -153,7 +153,42 @@
         }
 
         .offer {
-            width: 85%;
+            width: 75%;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #offer {
+
+        .offer {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    #offer {
+        h2 {
+            width: 60%;
+            font-size: 20px;
+        }
+
+        .offer {
+
+            .offer-heading {
+                h3 {
+                    font-size: 16px;
+                }
+
+                img {
+                    height: 45px;
+                }
+            }
+
+            .offer-description {
+                font-size: 12px;
+            }
         }
     }
 }

@@ -103,7 +103,6 @@
                 img {
                     height: 70px;
                 }
-
             }
         }
     }
@@ -190,5 +189,21 @@
 
     #advantages::before {
         transform: scaleX(4.5);
+    }
+}
+
+@media(max-width: 360px) {
+    #advantages {
+        h2 {
+            font-size: 20px;
+        }
+
+        .advantages {
+            grid-template-columns: auto auto;
+
+            .advantages-list {
+                padding: 0;
+            }
+        }
     }
 }

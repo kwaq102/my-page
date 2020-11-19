@@ -200,3 +200,20 @@
         }
     }
 }
+
+@media(max-width:360px) {
+    #personal-offer {
+        height: 600px;
+
+        .personal-offer-bg {
+            height: 600px;
+        }
+
+        .personal-offer-description {
+
+            h2 {
+                letter-spacing: 4px;
+            }
+        }
+    }
+}

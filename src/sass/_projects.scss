@@ -97,3 +97,14 @@
         }
     }
 }
+
+@media(max-width:360px) {
+    #projects {
+        .loading-projects {
+            h2 {
+                font-size: 20px;
+                width: 70%;
+            }
+        }
+    }
+}

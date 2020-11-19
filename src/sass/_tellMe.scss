@@ -84,3 +84,24 @@
         }
     }
 }
+
+@media(max-width:360px) {
+    .tell-me {
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        p:nth-child(3) {
+            font-size: 16px;
+        }
+
+        p:nth-child(4) {
+            font-size: 18px;
+        }
+    }
+}

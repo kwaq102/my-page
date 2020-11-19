@@ -7,6 +7,8 @@
     "aos": "^2.3.4",
     "bourbon": "^7.0.0",
     "gallery": "^1.0.2",
+    "gumshoejs": "^5.1.2",
+    "lightbox2": "^2.11.3",
     "particles.js": "^2.0.0",
     "smooth-scroll": "^16.1.3",
     "tiny-slider": "^2.9.3"
